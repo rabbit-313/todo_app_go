@@ -1,0 +1,318 @@
+2024/05/09 19:39:08 main.go:16: test
+2024/05/09 20:46:45 todos.go:23: no such table: todos
+2024/05/09 20:47:37 todos.go:23: table todo has no column named content
+2024/05/09 21:09:38 todos.go:46: no such column: content
+2024/05/10 00:34:41 main.go:19: sql: expected 5 destination arguments in Scan, not 4
+2024/05/10 01:11:23 server.go:3214: http: panic serving [::1]:52421: template: index.html:3: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049c6c0?, 0xc000110610?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a1f28?, 0xc00019a1c0}, {0x0, 0x0}, {0xc00015ba90?, 0x3, 0x0?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a1f28, 0xc00019a1c0}, 0xc00015bb18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:22 +0xda
+net/http.HandlerFunc.ServeHTTP(0x100044680?, {0x1005a1f28?, 0xc00019a1c0?}, 0x10028f07a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100851840?, {0x1005a1f28, 0xc00019a1c0}, 0xc000166200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001154a0?}, {0x1005a1f28?, 0xc00019a1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000178090, {0x1005a2718, 0xc0001153b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:11:23 server.go:3214: http: panic serving [::1]:52422: template: index.html:3: unexpected EOF
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049c6c0?, 0xc000110820?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a1f28?, 0xc00019a380}, {0x0, 0x0}, {0xc00015ba90?, 0x3, 0x0?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a1f28, 0xc00019a380}, 0xc000050b18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:22 +0xda
+net/http.HandlerFunc.ServeHTTP(0x100044680?, {0x1005a1f28?, 0xc00019a380?}, 0x10028f07a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100851840?, {0x1005a1f28, 0xc00019a380}, 0xc000166300)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000115e90?}, {0x1005a1f28?, 0xc00019a380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000178480, {0x1005a2718, 0xc0001153b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:11:25 server.go:3214: http: panic serving [::1]:52423: template: index.html:3: unexpected EOF
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049c6c0?, 0xc000110a30?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a1f28?, 0xc00019a540}, {0x0, 0x0}, {0xc00015ba90?, 0x3, 0x0?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a1f28, 0xc00019a540}, 0xc000050b18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:22 +0xda
+net/http.HandlerFunc.ServeHTTP(0x100044680?, {0x1005a1f28?, 0xc00019a540?}, 0x10028f07a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100851840?, {0x1005a1f28, 0xc00019a540}, 0xc000166400)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001c8720?}, {0x1005a1f28?, 0xc00019a540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0001786c0, {0x1005a2718, 0xc0001153b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:11:30 server.go:3214: http: panic serving [::1]:52434: template: index.html:3: unexpected EOF
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049c6c0?, 0xc0000b21f0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a1f28?, 0xc0000cc000}, {0x0, 0x0}, {0xc000155a90?, 0x3, 0x0?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a1f28, 0xc0000cc000}, 0xc0000aab18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:22 +0xda
+net/http.HandlerFunc.ServeHTTP(0x100044680?, {0x1005a1f28?, 0xc0000cc000?}, 0x10028f07a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100851840?, {0x1005a1f28, 0xc0000cc000}, 0xc0000b8000)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000096090?}, {0x1005a1f28?, 0xc0000cc000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009a000, {0x1005a2718, 0xc0001153b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:12:00 server.go:3214: http: panic serving [::1]:52448: template: index.html:3: unexpected EOF
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049c6c0?, 0xc0000b2400?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a1f28?, 0xc0000cc1c0}, {0x0, 0x0}, {0xc000155a90?, 0x3, 0x0?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a1f28, 0xc0000cc1c0}, 0xc0000aab18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:22 +0xda
+net/http.HandlerFunc.ServeHTTP(0x100044680?, {0x1005a1f28?, 0xc0000cc1c0?}, 0x10028f07a?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100851840?, {0x1005a1f28, 0xc0000cc1c0}, 0xc0000b8100)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000096930?}, {0x1005a1f28?, 0xc0000cc1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00009a240, {0x1005a2718, 0xc0001153b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:23:27 users.go:134: no such table: sessions
+2024/05/10 01:23:32 users.go:134: no such table: sessions
+2024/05/10 01:23:35 users.go:134: no such table: sessions
+2024/05/10 01:23:58 users.go:134: no such table: sessions
+2024/05/10 01:23:59 users.go:134: no such table: sessions
+2024/05/10 01:38:09 server.go:3214: http: panic serving [::1]:52780: template: index.html:13: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049fb60?, 0xc000216460?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a5888?, 0xc00021a2a0}, {0x0, 0x0}, {0xc00017b910?, 0x3, 0x10?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a5888, 0xc00021a2a0}, 0xc00017bb18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:29 +0x2fa
+net/http.HandlerFunc.ServeHTTP(0x100046ec0?, {0x1005a5888?, 0xc00021a2a0?}, 0x1002918ba?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100855840?, {0x1005a5888, 0xc00021a2a0}, 0xc000202700)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002001e0?}, {0x1005a5888?, 0xc00021a2a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0002061b0, {0x1005a6078, 0xc0001013b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:38:09 server.go:3214: http: panic serving [::1]:52779: template: index.html:13: unexpected EOF
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049fb60?, 0xc0002167a0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a5888?, 0xc00021a460}, {0x0, 0x0}, {0xc00012f910?, 0x3, 0x10?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a5888, 0xc00021a460}, 0xc00012fb18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:29 +0x2fa
+net/http.HandlerFunc.ServeHTTP(0x100046ec0?, {0x1005a5888?, 0xc00021a460?}, 0x1002918ba?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100855840?, {0x1005a5888, 0xc00021a460}, 0xc000202800)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000180270?}, {0x1005a5888?, 0xc00021a460?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000206120, {0x1005a6078, 0xc0001013b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:38:09 server.go:3214: http: panic serving [::1]:52778: template: index.html:13: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049fb60?, 0xc00029a6a0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a5888?, 0xc00029e1c0}, {0x0, 0x0}, {0xc00017f910?, 0x3, 0x10?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a5888, 0xc00029e1c0}, 0xc00017fb18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:29 +0x2fa
+net/http.HandlerFunc.ServeHTTP(0x100046ec0?, {0x1005a5888?, 0xc00029e1c0?}, 0x1002918ba?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100855840?, {0x1005a5888, 0xc00029e1c0}, 0xc000282200)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0001014a0?}, {0x1005a5888?, 0xc00029e1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc00014a120, {0x1005a6078, 0xc0001013b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:38:09 server.go:3214: http: panic serving [::1]:52789: template: index.html:13: unexpected EOF
+goroutine 53 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049fb60?, 0xc00029a9f0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a5888?, 0xc00029e380}, {0x0, 0x0}, {0xc000129910?, 0x3, 0x10?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a5888, 0xc00029e380}, 0xc0002ecb18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:29 +0x2fa
+net/http.HandlerFunc.ServeHTTP(0x100046ec0?, {0x1005a5888?, 0xc00029e380?}, 0x1002918ba?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100855840?, {0x1005a5888, 0xc00029e380}, 0xc000282300)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002ce6f0?}, {0x1005a5888?, 0xc00029e380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000286480, {0x1005a6078, 0xc0001013b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:38:10 server.go:3214: http: panic serving [::1]:52791: template: index.html:13: unexpected EOF
+goroutine 55 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049fb60?, 0xc00029ad40?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a5888?, 0xc00029e540}, {0x0, 0x0}, {0xc000129910?, 0x3, 0x10?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a5888, 0xc00029e540}, 0xc0002ecb18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:29 +0x2fa
+net/http.HandlerFunc.ServeHTTP(0x100046ec0?, {0x1005a5888?, 0xc00029e540?}, 0x1002918ba?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100855840?, {0x1005a5888, 0xc00029e540}, 0xc000282400)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002cf470?}, {0x1005a5888?, 0xc00029e540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc0002867e0, {0x1005a6078, 0xc0001013b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:38:15 server.go:3214: http: panic serving [::1]:52792: template: index.html:13: unexpected EOF
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049fb60?, 0xc00029b090?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a5888?, 0xc00029e700}, {0x0, 0x0}, {0xc000129910?, 0x3, 0x10?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a5888, 0xc00029e700}, 0xc0002ecb18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:29 +0x2fa
+net/http.HandlerFunc.ServeHTTP(0x100046ec0?, {0x1005a5888?, 0xc00029e700?}, 0x1002918ba?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100855840?, {0x1005a5888, 0xc00029e700}, 0xc000282500)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002f4210?}, {0x1005a5888?, 0xc00029e700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000286b40, {0x1005a6078, 0xc0001013b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:38:15 server.go:3214: http: panic serving [::1]:52793: template: index.html:13: unexpected EOF
+goroutine 59 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049fb60?, 0xc00029b3e0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a5888?, 0xc00029e8c0}, {0x0, 0x0}, {0xc000129910?, 0x3, 0x10?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a5888, 0xc00029e8c0}, 0xc0002ecb18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:29 +0x2fa
+net/http.HandlerFunc.ServeHTTP(0x100046ec0?, {0x1005a5888?, 0xc00029e8c0?}, 0x1002918ba?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100855840?, {0x1005a5888, 0xc00029e8c0}, 0xc000282600)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc0002f4f90?}, {0x1005a5888?, 0xc00029e8c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000286ea0, {0x1005a6078, 0xc0001013b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:38:45 server.go:3214: http: panic serving [::1]:52806: template: index.html:13: unexpected EOF
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049fb60?, 0xc000216af0?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a5888?, 0xc00021a620}, {0x0, 0x0}, {0xc00012f910?, 0x3, 0x10?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a5888, 0xc00021a620}, 0xc000050b18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:29 +0x2fa
+net/http.HandlerFunc.ServeHTTP(0x100046ec0?, {0x1005a5888?, 0xc00021a620?}, 0x1002918ba?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100855840?, {0x1005a5888, 0xc00021a620}, 0xc000202900)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000201e00?}, {0x1005a5888?, 0xc00021a620?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000206a20, {0x1005a6078, 0xc0001013b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
+2024/05/10 01:39:45 server.go:3214: http: panic serving [::1]:52825: template: index.html:13: unexpected EOF
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1868 +0xb9
+panic({0x10049fb60?, 0xc000216e40?})
+	/usr/local/go/src/runtime/panic.go:920 +0x270
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x1005a5888?, 0xc00021a7e0}, {0x0, 0x0}, {0xc00012f910?, 0x3, 0x10?})
+	/Users/raivc/go/src/todo_app/app/controllers/server.go:17 +0x21f
+todo_app/app/controllers.index({0x1005a5888, 0xc00021a7e0}, 0xc000050b18?)
+	/Users/raivc/go/src/todo_app/app/controllers/route_main.go:29 +0x2fa
+net/http.HandlerFunc.ServeHTTP(0x100046ec0?, {0x1005a5888?, 0xc00021a7e0?}, 0x1002918ba?)
+	/usr/local/go/src/net/http/server.go:2136 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100855840?, {0x1005a5888, 0xc00021a7e0}, 0xc000202a00)
+	/usr/local/go/src/net/http/server.go:2514 +0x142
+net/http.serverHandler.ServeHTTP({0xc000272ba0?}, {0x1005a5888?, 0xc00021a7e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:2938 +0x8e
+net/http.(*conn).serve(0xc000206d80, {0x1005a6078, 0xc0001013b0})
+	/usr/local/go/src/net/http/server.go:2009 +0x5f4
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3086 +0x5cb
